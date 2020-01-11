@@ -10,11 +10,11 @@ void createWords(std::string *wordsFileName, std::string *resultFileName, std::u
 int main(int argc, const char * argv[]) {
 
     std::string lettersFileName, wordsFileName, resultFileName;
-    std::cout << "Input file name for letters" << std::endl;
+    std::cout << "Input path to file for letters" << std::endl;
     std::cin >> lettersFileName;
-    std::cout << "Input file name for words" << std::endl;
+    std::cout << "Input path to file for words" << std::endl;
     std::cin >> wordsFileName;
-    std::cout << "Input file name for result" << std::endl;
+    std::cout << "Input path to file for result" << std::endl;
     std::cin >> resultFileName;
 
     std::unordered_map<int, int> availableLetters = getAvailableLetters(&lettersFileName);
